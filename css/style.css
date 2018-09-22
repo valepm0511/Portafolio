@@ -21,9 +21,9 @@ header {
 
 img#logo {
     width: 300px;
-    margin-left: 15px;
-    margin-right: 15px;
     margin-top: -35px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #body {
@@ -46,4 +46,37 @@ img#logo {
 
 .menuBarra {
     margin-top: 35px;
+}
+
+#quienSoy {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+#habilidades {
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+}
+
+#portafolio {
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+#contacto {
+    width: 100%;
+    height: 100vh;
+    background-color: orangered;
+}
+
+@media (max-width:767px) {
+    .borderUl {
+        border: none;
+        width: 100%;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
 }
