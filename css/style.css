@@ -3,15 +3,9 @@
     padding: 0;
 }
 
-
-/* 
-section#banner {
-    width: 100%;
-    background-image: url("../img/fondo1.jpg");
-    background-attachment: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+.bgStyle {
+    background-color: #F9F7EF;
+}
 
 header {
     position: fixed;
@@ -20,7 +14,7 @@ header {
 }
 
 img#logo {
-    width: 300px;
+    width: 200px;
     margin-top: -35px;
     margin-left: 20px;
     margin-right: 20px;
@@ -48,28 +42,49 @@ img#logo {
     margin-top: 35px;
 }
 
+.parallax {
+    background: #fff fixed no-repeat 50% 50%;
+    background-size: cover;
+}
+
 #quienSoy {
     width: 100%;
     height: 100vh;
-    background-color: red;
+    background-image: url('../img/fondo1.jpg');
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #habilidades {
     width: 100%;
     height: 100vh;
-    background-color: green;
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #portafolio {
     width: 100%;
     height: 100vh;
-    background-color: blueviolet;
+    background-image: url('../img/fondo3.jpg');
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #contacto {
     width: 100%;
     height: 100vh;
-    background-color: orangered;
+    background-image: url('../img/fondo4.jpg');
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 @media (max-width:767px) {
@@ -79,4 +94,18 @@ img#logo {
         padding-bottom: 0px;
         padding-top: 0px;
     }
+}
+
+.scrollDown {
+    width: 25px;
+    height: 41px;
+    z-index: 99999;
+    top: 90%;
+    position: fixed;
+}
+
+.flecha {
+    margin: auto;
+    transform: translate(0px, 8px);
+    font-size: 40px;
 }
