@@ -1,26 +1,7 @@
-// $(document).ready(function() {
-
-//     var bloques = $('.bloque'),
-//         enlaces = $('#navegacion').find('a');
-
-//     enlaces.click(function(e) {
-
-//         e.preventDefault();
-
-//         var hash = $(this).attr('href');
-
-//         bloques
-//             .filter(hash)
-//             .addClass('visible')
-//             .siblings()
-//             .removeClass('visible');
-
-//         enlaces
-//             .removeClass('activo');
-
-//         $(this)
-//             .addClass('activo');
-
-//     });
-
-// });
+// window.onload = () => {
+//     setTimeout(() => {
+//         const containerPreloader = document.getElementById('containerPreloader');
+//         containerPreloader.style.visibility = 'hidden';
+//         containerPreloader.style.opacity = '0';
+//     }, 2000)
+// };
