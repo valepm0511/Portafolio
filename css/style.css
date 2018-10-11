@@ -63,18 +63,49 @@ img#logo {
 .imgstyle {
     width: 320px;
     margin-top: 20px;
+    border-radius: 100%;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.containerText {
+.imgLogos {
+    width: 120px;
+}
+
+.stitched {
+    padding: 20px;
+    margin: 10px;
     background-color: rgba(249, 247, 239, 0.7);
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #1C6D68;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #F9F7EF, 2px 1px 6px 4px rgba(10, 10, 0, 0.1);
+    font-weight: normal;
+}
+
+.stitchedHome {
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(249, 247, 239, 0.7);
+    border: 2px dashed #1C6D68;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #F9F7EF, 2px 1px 6px 4px rgba(10, 10, 0, 0.1);
     top: 20px;
     border-radius: 10px;
-    background-image: url("../img/papel2.jpg");
-    /* height: auto; */
     font-size: 18px;
-    color: #28746E;
-    box-shadow: 6px 6px 5px 0px rgba(0, 0, 40, 0.45);
+    color: #333333;
     margin-bottom: 10px;
+}
+
+.textLogo {
+    font-size: 20px !important;
+    color: #1C6D68 !important;
+    text-align: center !important;
+    font-weight: bold;
 }
 
 #quienSoy,
@@ -89,9 +120,10 @@ img#logo {
 .titlePage {
     font-family: 'Lobster', cursive;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 110px;
     color: #E66F69;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 @media (max-width:767px) {
