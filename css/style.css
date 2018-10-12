@@ -108,6 +108,45 @@ img#logo {
     font-weight: bold;
 }
 
+.textCard {
+    color: #333333;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.titleCard {
+    color: #333;
+    text-align: center;
+}
+
+.btnStyle {
+    background-color: #1C6D68;
+    color: #fff;
+    transition: 0.5s;
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+.btnStyle:hover {
+    background-color: #E66F69;
+    color: #fff;
+}
+
+.imgCard {
+    border-radius: 8%;
+}
+
+.containerCard {
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    background-color: #F9F7EF;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 #quienSoy,
 #habilidades,
 #portafolio,
