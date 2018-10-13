@@ -245,3 +245,9 @@ img#logo {
         max-width: 95%;
     }
 }
+
+@media (max-width:767px) {
+    .containerCard {
+        margin-bottom: 20px;
+    }
+}
