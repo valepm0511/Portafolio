@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
 }
 
-.main {
+body {
     background: url('../img/fondo3.jpg');
     /* background-size: cover; */
     /* background-position: fixed; */
