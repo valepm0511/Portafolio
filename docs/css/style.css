@@ -16,8 +16,8 @@
 
 .main {
     background: url('../img/fondo2.jpg');
-    /* background-size: cover;
-    background-position: fixed;*/
+    background-size: cover;
+    background-position: fixed;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
@@ -237,5 +237,11 @@ img#logo {
 @media (max-width:767px) {
     .imgLogos {
         width: 170px;
+    }
+}
+
+@media (max-width:450px) {
+    .containerInfo {
+        max-width: 95%;
     }
 }
