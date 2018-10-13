@@ -4,18 +4,8 @@
     scroll-behavior: smooth;
 }
 
-#containerPreloader {
-    background-color: #2B2B2B;
-    height: 100%;
-    width: 100%;
-    /* position: fixed; */
-    transition: all 1s ease;
-    z-index: 10000;
-    background-image: url("../img/fondo2.jpg");
-}
-
 .main {
-    background: url('../img/fondo2.jpg');
+    background: url('../img/fondo3.jpg');
     background-size: cover;
     /* background-position: fixed; */
     background-repeat: no-repeat;
