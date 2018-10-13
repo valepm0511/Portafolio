@@ -5,10 +5,11 @@
 }
 
 body {
-    background: url('../img/fondo2.jpg');
+    background: url('../img/fondo3.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
+    /* background-size: contain; */
 }
 
 .bgStyle {
