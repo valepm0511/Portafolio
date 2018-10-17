@@ -10,7 +10,7 @@ body {
     background-attachment: fixed;
     width: 100%;
     min-height: auto;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .bgStyle {
