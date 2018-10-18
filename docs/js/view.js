@@ -125,7 +125,7 @@ window.view.contacto = () => {
     });
 
     let content = document.getElementById('content');
-    content.innerHTML = `<section id="contacto" class="containerInfo m-auto contentContact mb-5  animated fadeIn">
+    content.innerHTML = `<section id="contacto" class="containerInfo m-auto mb-5  animated fadeIn">
     <h1 class="titlePage">Contacto</h1>
     <div class="stitched">
         <div class="animated zoomIn">
