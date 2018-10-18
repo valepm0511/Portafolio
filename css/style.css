@@ -1,15 +1,17 @@
     * {
         margin: 0;
         padding: 0;
-        /* scroll-behavior: smooth; */
     }
     
-    body {
-        background: url('../img/fondo3.jpg');
+    .containerP {
+        background-image: url('../img/fondo3.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
+        background-size: cover;
+        position: fixed;
+        z-index: -1;
         width: 100%;
-        min-height: auto;
+        height: 100%;
     }
     
     .bgStyle {
