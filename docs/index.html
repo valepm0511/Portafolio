@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <!-- aos -->
-    <link rel="stylesheet" href="css/aos.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- mis estilos -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="img/favicon2.png">
 
 </head>
@@ -33,167 +34,42 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav borderUl justify-content-around">
                     <li class="nav-item">
-                        <a class="nav-link linkStyle" href="#quienSoy">Quién Soy</a>
+                        <a class="nav-link linkStyle"> <button onclick="window.onload()" class="btnMenu"> Quién Soy</button></a>
                     </li>
                     <div class="dropdown-divider"></div>
                     <li class="nav-item">
-                        <a class="nav-link linkStyle" href="#habilidades">Habilidades</a>
+                        <a class="nav-link linkStyle"><button onclick="window.view.habilidades()" class="btnMenu"> Habilidades</button></a>
                     </li>
                     <div class="dropdown-divider"></div>
                 </ul>
                 <a href="#quienSoy"><img src="img/logo.png" alt="Logo" class="img-fluid d-md-block d-none" id="logo"></a>
                 <ul class="navbar-nav borderUl justify-content-around ">
                     <li class="nav-item">
-                        <a class="nav-link linkStyle" href="#portafolio">Portafolio</a>
+                        <a class="nav-link linkStyle" href="#portafolio"><button onclick="window.view.portafolio()" class="btnMenu"> Portafolio</button></a>
                     </li>
                     <div class="dropdown-divider"></div>
                     <li class="nav-item">
-                        <a class="nav-link linkStyle" href="#contacto">Contacto</a>
+                        <a class="nav-link linkStyle" href="#contacto"><button onclick="window.view.contacto()" class="btnMenu"> Contacto</button></a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- quien soy -->
-    <div class="container-fluid m-0 p-0">
-        <section id="quienSoy" class="containerInfo m-auto">
-            <h1 class="titlePage">Quién soy</h1>
-            <div class="row stitchedHome">
-                <div class="col-md-5 col-12 pt-2 pb-2">
-                    <img src="img/fotoHome.jpg" data-aos="fade-up" class="img-fluid imgstyle d-block m-auto">
-                </div>
-                <div class="col-md-7 col-12">
-                    <div class="containerText p-1 text-center">
-                        <p class="lead" data-aos="fade-down"> Hola! Bienvenid@ a mi portafolio web, mi nombre es Valeria Peñaloza y tengo 31 años, y una carrera en constante desarrollo en el área del desarrollo multimedia y digital. Me dedico de hace ya más de 5 años al rubro web, luego de
-                            haberme titulado de Diseñadora y Programadora Multimedia en Inacap y mi participación en el bootcamp de Laboratoria. Siempre ando en búsqueda de nuevos desafíos, adquirir nuevos conocimientos en todo ámbito, nuevas tecnologías
-                            y por sobre todo nuevos retos y desafíos personales cada vez mayores. Amante de los animales y de conocer el mundo y sus distintas culturas. Espero que te agrade del contenido de mi portafolio y cualquier consulta no dudes
-                            en escribirme!</p>
-                    </div>
 
-                </div>
-            </div>
+    <div class="container-fluid m-0 p-0 animated fadeIn" id="content">
+        <!-- contenido portafolio -->
+    </div>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "></script>
+    <!-- popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "></script>
+    <!-- javascript bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "></script>
+    <!-- aos -->
+    <script src="js/view.js"></script>
 
-        </section>
-        <!-- habilidades -->
-        <section id="habilidades" class="containerInfo m-auto">
-            <h1 class="titlePage">Habilidades</h1>
-            <div class="stitched">
-                <div class="row mt-2 mb-4">
-                    <div class="col-md-4 col-12" data-aos="fade-right">
-                        <img src="img/html5Final.png" alt="html5" class="imgLogos img-fluid d-block mx-auto">
-                        <p class="textLogo">HTML5</p>
-                    </div>
-                    <div class="col-md-4 col-sm-12" data-aos="fade-right">
-                        <img src="img/css3Final.png" alt="css3" class="imgLogos img-fluid d-block mx-auto">
-                        <p class="textLogo">css3</p>
-                    </div>
-                    <div class="col-md-4 col-12" data-aos="fade-right">
-                        <img src="img/jsFinal.png" alt="javascript" class="imgLogos img-fluid d-block mx-auto">
-                        <p class="textLogo">JavaScript</p>
-                    </div>
-                </div>
-                <div class="row mt-3 ">
-                    <div class="col-md-4 col-12" data-aos="fade-left">
-                        <img src="img/bootstrapFinal.png" alt="bootstrap" class="imgLogos img-fluid d-block mx-auto">
-                        <p class="textLogo lead">Bootstrap</p>
-                    </div>
-                    <div class="col-md-4 col-12" data-aos="fade-left">
-                        <img src="img/angularFinal.png" alt="angular" class="imgLogos img-fluid d-block mx-auto">
-                        <p class="textLogo">Angular</p>
-                    </div>
-                    <div class="col-md-4 col-12" data-aos="fade-left">
-                        <img src="img/githubFinal.png" alt="github" class="imgLogos img-fluid d-block mx-auto">
-                        <p class="textLogo">Github</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- portafolio -->
-        <section id="portafolio" class="containerInfo m-auto">
-            <h1 class="titlePage">Portafolio</h1>
-            <div class="stitched">
-                <div class="row justify-content-around">
-                    <div class="col-md-3 col-sm-12 px-0 py-3 containerCard" data-aos="flip-left">
-                        <img class="card-img-top px-3 imgCard" src="img/vistaTraslab.png">
-                        <div class="card-body px-0 ">
-                            <h5 class="card-title titleCard">TransLab</h5>
-                            <a href="https://valepm0511.github.io/TransLab/" target="_blank"><button class="btn btnStyle mb-2">Link Deploy</button></a>
-                            <a href="https://github.com/valepm0511/TransLab" target="_blank"> <button class="btn btnStyle">Link Github</button></a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12 px-0 py-3 containerCard" data-aos="flip-left">
-                        <img class="card-img-top px-3 imgCard" src="img/vistaCesar.png">
-                        <div class="card-body px-0">
-                            <h5 class="card-title titleCard">Cifrado Cesar</h5>
-                            <a href="https://valepm0511.github.io/Cifrado-Cesar/" target="_blank"><button class="btn btnStyle mb-2">Link Deploy</button></a>
-                            <a href="https://github.com/valepm0511/Cifrado-Cesar" target="_blank"> <button class="btn btnStyle">Link Github</button></a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12 px-0 py-3 containerCard" data-aos="flip-left">
-                        <img class="card-img-top px-3 imgCard" src="img/vistaFoodMap.png">
-                        <div class="card-body px-0 ">
-                            <h5 class="card-title titleCard">FoodMap</h5>
-                            <a href="https://valepm0511.github.io/FoodMap/" target="_blank"><button class="btn btnStyle mb-2">Link Deploy</button></a>
-                            <a href="https://github.com/valepm0511/FoodMap" target="_blank"><button class="btn btnStyle">Link Github</button></a>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row justify-content-center mt-1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-                    <div class="col-md-5 col-12 justify-content-center mt-5 linkProyect ">
-                        <a href="https://github.com/valepm0511" target="_blank"> <button class="btn btnProyect linkRepo">Mas proyectos aqui!</button></a>
-                    </div>
-                </div>
-        </section>
-        <!-- contacto -->
-        <section id="contacto" class="containerInfo m-auto contentContact mb-5">
-            <h1 class="titlePage">Contacto</h1>
-            <div class="stitched">
-                <div data-aos="zoom-in">
-                    <h5 class="text-center titleContact">Si te gusta lo que hago, sigueme en mis redes sociales:</h5>
-                    <div class="iconRedSocial">
-                        <a href="https://www.facebook.com/valepenaloza5" target="_blank"><i class="fab fa-facebook-square styleIcon"></i></a>
-                        <a href="https://www.instagram.com/valepm511/?hl=es" target="_blank"><i class="fab fa-instagram styleIcon"></i></a>
-                        <a href="https://www.linkedin.com/in/valeria-pe%C3%B1aloza-martinez/" target="_blank"> <i class="fab fa-linkedin styleIcon"></i></a>
-                    </div>
-                    <h5 class="text-center titleContact">Mira mi repositorio en Github:</h5>
-                    <div class="iconRedSocial">
-                        <a href="https://github.com/valepm0511" target="_blank"><i class="fab fa-github styleIcon"></i></a>
-                    </div>
-                    <h5 class="text-center titleContact">Envíame un correo a:</h5>
-                    <div class="iconRedSocial">
-                        <p class="text-center styleLinkCorreo">valeria.penaloza5@gmail.com</p>
-                    </div>
-                    <h5 class="text-center titleContact">O descarga mi currículum:</h5>
-                    <div class="col-md-4 col-12 mt-4 linkProyect m-auto">
-                        <a href="img/CV-ValeriaPenaloza.pdf" download="CV-ValeriaPenaloza.pdf" target="_blank" class="btn btnStyle">Mi currículum</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        </div>
-        <!-- </div> -->
-        <!-- jquery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-        <!-- popper.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
-        <!-- javascript bootstrap -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
-        <!-- aos -->
-        <script src="js/aos.js"></script>
-
-        <script type="text/javascript">
-            AOS.init({
-                duration: 1500,
-            });
-        </script>
 </body>
-
 
 </html>
