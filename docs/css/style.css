@@ -189,6 +189,10 @@
         overflow: hidden;
     }
     
+    #contacto {
+        height: 100vh;
+    }
+    
     .titlePage {
         font-family: 'Lobster', cursive;
         text-align: center;
